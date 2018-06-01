@@ -17,7 +17,7 @@ class Server:
 
     WELCOME_MESSAGE = "\n> Welcome to our chat app!!! What is your name?\n".encode('utf8')
 
-    def __init__(self, host=socket.gethostbyname('localhost'), port=50000, allowReuseAddress=True, timeout=3):
+    def __init__(self, host=socket.gethostbyname('localhost'), port=50001, allowReuseAddress=True, timeout=3):
         self.address = (host, port)
         self.channels = {} # Channel Name -> Channel
         self.users_channels_map = {} # User Name -> Channel Name
